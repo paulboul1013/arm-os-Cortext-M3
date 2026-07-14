@@ -11,8 +11,8 @@
 
 //GPIO memory map
 #define GPIOA   ((__REG_TYPE) 0x4001_0800)
-#define GIPOA_CRL ((__REG) (GPIOA + 0x00))
-#define GIPOA_CRH ((__REG) (GPIOA + 0x04))
+#define GPIOA_CRL ((__REG) (GPIOA + 0x00))
+#define GPIOA_CRH ((__REG) (GPIOA + 0x04))
 
 //USART1 memory map
 #define USART1  ((__REG_TYPE) 0x40013800)
