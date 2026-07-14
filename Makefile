@@ -1,5 +1,5 @@
 CROSS_COMPILE ?= arm-none-eabi-
-CC := $(CROSS_COMPILE) gcc
+CC := $(CROSS_COMPILE)gcc
 CFLAGS = -fno-common -O0 -mcpu=cortex-m3 -mthumb -T link.ld -nostartfiles
 
 TARGET = main.bin
