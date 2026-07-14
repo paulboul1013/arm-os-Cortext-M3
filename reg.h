@@ -10,7 +10,7 @@
 #define RCC_APB1ENR ((__REG) (RCC + 0x1C))
 
 //GPIO memory map
-#define GPIOA   ((__REG_TYPE) 0x4001_0800)
+#define GPIOA   ((__REG_TYPE) 0x40010800)
 #define GPIOA_CRL ((__REG) (GPIOA + 0x00))
 #define GPIOA_CRH ((__REG) (GPIOA + 0x04))
 
