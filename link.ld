@@ -2,8 +2,8 @@ ENTRY(reset_handler)
 
 MEMORY
 {
-    //Boot from main Flash memory
-    //64K is from STM32 F103 C8 T6's C8 = 64KB Flash
+    /* Boot from main Flash memory. */
+    /* STM32F103C8T6 provides 64 KB of Flash. */
     FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 64K
     SRAM  (rwx): ORIGIN = 0x20000000, LENGTH = 20K
 }
