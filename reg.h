@@ -6,8 +6,8 @@
 
 //RCC memory map
 #define RCC     ((__REG_TYPE) 0x40021000)
-#define RCC_APB2ENR ((_REG) (RCC + 0x18))
-#define RCC_APB1ENR ((_REG) (RCC + 0x1C))
+#define RCC_APB2ENR ((__REG) (RCC + 0x18))
+#define RCC_APB1ENR ((__REG) (RCC + 0x1C))
 
 //GPIO memory map
 #define GPIOA   ((__REG_TYPE) 0x4001_0800)
