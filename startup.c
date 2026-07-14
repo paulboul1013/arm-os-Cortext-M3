@@ -12,4 +12,4 @@ __attribute((section(".isr_vector")))
 uint32_t *isr_vectors[] = {
     &_stack_top,
     (uint32_t *) reset_handler, //code entry point
-}
+};
