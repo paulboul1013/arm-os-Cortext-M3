@@ -15,7 +15,7 @@ $(TARGET): kernel_main.c startup.c
 
 qemu: $(TARGET)
 	@$(QEMU) -M ? | grep $(QEMU_MACHINE) >/dev/null || \
-		(echo "$(QEMU) does not provide $(QEMU_MACHINE);" exit 1)
+		(echo "$(QEMU) does not provide $(QEMU_MACHINE)"; exit 1)
 	@echo "Press Ctrl-A and then X to exit QEMU"
 	@echo 
 	$(QEMU) -M $(QEMU_MACHINE) -nographic -kernel main.bin
